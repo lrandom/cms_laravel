@@ -6,11 +6,11 @@
     </div>
     <!-- /.box-header -->
     <!-- form start -->
-    <form role="form">
+    <form role="form" action="{{action('Admin\Post@add')}}">
       <div class="box-body">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Enter email">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
@@ -35,4 +35,5 @@
       </div>
     </form>
   </div>
+  <a href="{{url('admin/users')}}"></a> 
 @endsection

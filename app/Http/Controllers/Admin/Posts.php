@@ -14,8 +14,10 @@ class Posts extends Controller
         return view('admin.post.index', ['list' => $list]);
     }
 
-    public function add()
-    { }
+    public function add(Request $request)
+    {
+       $request->email;  
+    }
 
     public function edit()
     { }
